@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Moustafa Eraky — Portfolio</title>
+  <meta name="description" content="Portfolio of Moustafa Eraky — aspiring software developer, Full-Stack .NET, Java, C#, SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f17;--card:#121826;--muted:#9aa4b2;--text:#e6edf6;--brand:#5b9cff;--brand-2:#7ee787;--accent:#f2cc60;
+      --ring: 0 0 0 3px rgba(91,156,255,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(1200px 800px at 80% -10%,rgba(91,156,255,.08),transparent 60%),radial-gradient(900px 600px at -10% 10%,rgba(126,231,135,.06),transparent 50%),var(--bg);color:var(--text);}
+    a{color:var(--brand);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+    header{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;padding:16px 0 8px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .name{font-weight:800;font-size:clamp(22px,3.4vw,32px)}
+    .links{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(180deg,rgba(255,255,255,.06),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);padding:10px 14px;border-radius:12px;color:var(--text);text-decoration:none}
+    .btn:focus{outline:none;box-shadow:var(--ring)}
+    .grid{display:grid;gap:18px}
+    @media (min-width:900px){.grid.cols-2{grid-template-columns:1.1fr .9fr}}
+    section{padding:28px 0}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:20px}
+    h2{font-size:clamp(18px,2.6vw,24px);margin:0 0 10px}
+    p{line-height:1.6;color:var(--muted);margin:8px 0}
+    ul{margin:8px 0 0 18px;color:var(--muted)}
+    .tag{display:inline-block;padding:6px 10px;border:1px solid rgba(255,255,255,.14);border-radius:999px;margin:6px 6px 0 0;font-size:14px;color:#c9d1d9}
+    .kicker{font-size:13px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+    .hero{display:grid;gap:18px}
+    @media (min-width:900px){.hero{grid-template-columns:1.2fr .8fr;align-items:stretch}}
+    .accent{color:#fff}
+    .list{display:grid;gap:12px}
+    .projects{display:grid;gap:18px}
+    @media (min-width:900px){.projects{grid-template-columns:repeat(3,1fr)}}
+    .project{border:1px solid rgba(255,255,255,.12);border-radius:16px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02))}
+    .project .thumb{aspect-ratio:16/9;background:linear-gradient(135deg, rgba(91,156,255,.25), rgba(126,231,135,.18));display:flex;align-items:center;justify-content:center;font-weight:700;color:#0b1220}
+    .project .body{padding:16px}
+    .project h3{margin:0 0 6px;font-size:18px}
+    .meta{font-size:13px;color:#b7c1ce}
+    .cta{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+    footer{padding:24px 0;border-top:1px solid rgba(255,255,255,.08);color:#9aa4b2}
+    .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div>
+        <div class="kicker">Portfolio</div>
+        <div class="name">Moustafa Eraky</div>
+        <p style="margin:6px 0 0">Aspiring Software Developer • Full-Stack .NET | Java | C# | SQL</p>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a class="btn" href="mailto:erakybusiness2249@gmail.com" title="Email">📧 Email</a>
+        <a class="btn" href="tel:+201202704799" title="Call">📞 Call</a>
+        <a class="btn" href="https://github.com/MIRIKO2022" target="_blank" rel="noreferrer">🧑‍💻 GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/moustafa-eraky" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- USP / Hero -->
+    <section aria-labelledby="usp-title">
+      <div class="hero card">
+        <div>
+          <h2 id="usp-title">Unique Value</h2>
+          <p class="accent"><strong>I build clean, reliable .NET web apps and APIs, and I learn fast.</strong></p>
+          <p>I'm a senior CS student at <strong>Alexandria University</strong>. I work primarily with <strong>C#, ASP.NET Core, SQL Server</strong>, plus <strong>Java</strong> and the web stack (HTML, CSS, JavaScript). I've explored <strong>Game Development</strong> and <strong>quantum computing</strong> through focused training.</p>
+          <div class="cta">
+            <span class="tag">C# / .NET Core</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git & GitHub</span>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Offered Services</h2>
+          <ul class="list">
+            <li><strong>Full-Stack .NET Web Apps:</strong> ASP.NET Core MVC/REST, Entity Framework, authentication, deployment guidance.</li>
+            <li><strong>API Development:</strong> Design, implement and document RESTful APIs.</li>
+            <li><strong>Database Design & SQL:</strong> Schema design, queries, performance basics in SQL Server.</li>
+            <li><strong>Frontend Integration:</strong> Responsive HTML/CSS/JavaScript with clean UI.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- About + Education -->
+    <section class="grid cols-2" aria-labelledby="about-title">
+      <div class="card">
+        <h2 id="about-title">About</h2>
+        <p>I enjoy turning requirements into working software and writing code that's easy to read and maintain. I'm comfortable collaborating in Git and documenting my work. I'm looking for internships or junior roles where I can contribute to real products and grow.</p>
+        <p class="meta">Alexandria, Egypt • Arabic (Native), English (Fluent)</p>
+      </div>
+      <div class="card">
+        <h2>Education</h2>
+        <p><strong>Alexandria University</strong> — B.Sc. in Computer Science</p>
+        <p class="meta">2022-2026</p>
+        <h3 style="margin:10px 0 6px;font-size:15px">Courses & Certifications</h3>
+        <ul>
+          <li>Full Stack .NET Core — DEPI</li>
+          <li>Quantum Computing — QWorld @ Alamein University</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section aria-labelledby="skills-title">
+      <div class="card">
+        <h2 id="skills-title">Skills</h2>
+        <div class="cta" style="margin-bottom:8px">
+          <span class="tag">C#</span><span class="tag">ASP.NET Core</span><span class="tag">Entity Framework</span><span class="tag">SQL / SQL Server</span><span class="tag">Java</span><span class="tag">C++ (basic)</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span><span class="tag">Git/GitHub</span><span class="tag">Visual Studio</span>
+        </div>
+        <p class="meta">Comfortable with: object-oriented programming, REST, basic data structures & algorithms, version control.</p>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title" class="sr-only">Projects</h2>
+      <div class="projects">
+        <article class="project">
+          <div class="thumb">Website</div>
+          <div class="body">
+            <h3>Travel-booking-site</h3>
+            <p>A full-featured Travel Booking Website where users can search destinations, compare packages, and book trips online.</p>
+            <p class="meta">ASP.NET Core •  SQL Server • Bootstrap</p>
+            <p><a href="https://github.com/YoussefAbuHelw/Travel-booking-site" target="_blank" rel="noreferrer">View code on GitHub ↗</a></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb">Browser Extension</div>
+          <div class="body">
+            <h3>Fact Check Chrome Extension</h3>
+            <p>A Chrome extension that helps users verify the credibility of online information using various APIs.</p>
+            <p class="meta">JavaScript • HTML • CSS</p>
+            <p><a href="https://github.com/MohamedEMonem/GeminiContest" target="_blank" rel="noreferrer">View code on GitHub ↗</a></p>
+          </div>
+        </article>
+        <article class="project">
+          <div class="thumb">Game</div>
+          <div class="body">
+            <h3>John Lemon</h3>
+            <p>Stealth Horror Game built in Unity.</p>
+            <p class="meta">C# • Unity • Game Design</p>
+            <p><a href="https://github.com/MIRIKO2022/lem" target="_blank" rel="noreferrer">View code on GitHub ↗</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience / Testimonials / Achievements -->
+    <section class="grid cols-2" aria-labelledby="extra-title">
+      <div class="card">
+        <h2 id="extra-title">Achievements</h2>
+        <ul>
+          <li>Completed focused training in .NET development and quantum computing alongside university studies.</li>
+          <li>Active GitHub presence with academic and personal projects.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Testimonials</h2>
+        <!-- <p class="meta">Add quotes from instructors, teammates, or clients here.</p> -->
+        <ul>
+          <li><em>“Moustafa delivers reliable features and communicates clearly.”</em> — <span class="meta">Placeholder</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section aria-labelledby="contact-title">
+      <div class="card">
+        <h2 id="contact-title">Let's build something</h2>
+        <p>Need help with a .NET web app, API, or database? I'm available for internships, junior roles, or freelance projects.</p>
+        <div class="cta">
+          <a class="btn" href="mailto:erakybusiness2249@gmail.com">Email Me</a>
+          <a class="btn" href="https://github.com/MIRIKO2022" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/moustafa-eraky" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="year"></span> Moustafa Eraky • Built with HTML & modern CSS</div>
+    </footer>
+  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
